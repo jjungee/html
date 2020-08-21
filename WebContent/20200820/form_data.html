@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<form>
+			<input type="reset" value="초기화" style="cursor: pointer;">
+			
+	<!-- 		submit의 기능을 가진 이미지 버튼 -->
+			<input type="image" src="../img/btn.png" width="100px">		
+			
+			<hr>
+	<!-- 		accept 옵션은 해당하는 파일만 선택할 수 있는 기능. -->
+			<input type="file" accept="image/jpg">
+			
+			<hr>
+			<textarea rows="20" cols="75"></textarea>
+			
+			<hr>
+			<input type="url" name="url">
+			<input type="email" name="email">
+			<input type="tel" name="tel">
+			<input type="color" name="color">
+			<input type="date" name="date">
+			<input type="week" name="week">
+			<input type="number" name="number" min="1" max="10">
+			<input type="range" name="range" min="1" max="10">
+		</form>
+		
+		<hr>
+		<fieldset>인적사항 입력</fieldset>
+		<input type="text" name="name" >
+		<input type="text" name="tel" >
+		
+		<hr>
+		<label for= "male">label남성</label><input type="radio" name="gender" value="male" id = "male" autocomplete="off" placeholder="이름을 작성해 주세요">남성<br>
+		<label for= "female">label여성</label><input type="radio" name="gender" value="female" id = "female" autofocus value="010-0000-0000" readonly>여성
+		
+		<hr>
+		<form>
+			<input type="text" pattern="[0-9{3}-[0-9]{3-4}-[0-9]{4}]" required="required">
+			<input type="submit" value="확인">
+		</form>
+		
+	</body>
+</html>
